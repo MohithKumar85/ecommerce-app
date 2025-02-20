@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-ecommerce-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-ecommerce-app
+  template:
+    metadata:
+      labels:
+        app: my-ecommerce-app
+    spec:
+      containers:
+      - name: my-ecommerce-app
+        image: my-ecommerce-app:latest
+        ports:
+        - containerPort: 3000
