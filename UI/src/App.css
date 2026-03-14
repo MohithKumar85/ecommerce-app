@@ -1,0 +1,6 @@
+/* Small helper to soften the card against the dark background when using Bootstrap */
+.topstop-card {
+  background: #111827;
+  color: #e5e7eb;
+}
+
